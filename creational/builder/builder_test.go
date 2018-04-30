@@ -1,4 +1,4 @@
-package creational
+package builder
 
 import "testing"
 

@@ -3,7 +3,7 @@ The Singleton pattern provides you with a single instance of an object,
 and guarantee that there are no duplicates.
 */
 
-package creational
+package singleton
 
 //Singleton interface provides all methods that are supported by our
 //singleton instance

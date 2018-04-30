@@ -5,7 +5,7 @@ or a database. The user only needs an interface that provides him this value. By
 this decision to a Factory, this Factory can provide an interface that fits the user needs.
 */
 
-package creational
+package factory
 
 import (
 	"fmt"

@@ -3,7 +3,7 @@ The Builder pattern helps to construct complex objects without directly instanti
 or writing the logic they require.
 */
 
-package creational
+package builder
 
 type BuildProcess interface {
 	SetWheels() BuildProcess

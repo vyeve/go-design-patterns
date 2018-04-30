@@ -1,4 +1,4 @@
-package creational
+package singleton
 
 import "testing"
 

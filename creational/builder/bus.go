@@ -1,4 +1,4 @@
-package creational
+package builder
 
 type BusBuilder struct {
 	v VehicleProduct

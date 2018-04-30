@@ -1,4 +1,4 @@
-package creational
+package builder
 
 type BikeBuilder struct {
 	v VehicleProduct
