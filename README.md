@@ -5,3 +5,4 @@ Design patterns for Go language
 1. Singleton
 2. Builder
 3. Factory method
+4. Abstract Factory
