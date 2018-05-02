@@ -1,9 +1,12 @@
-# go-design-patterns
+# Go Design Patterns
 Design patterns for Go language
 
-### Creational
+### Creational Patterns
 1. Singleton
 2. Builder
 3. Factory method
 4. Abstract Factory
 5. Prototype
+
+### Structural Patterns
+1. Composite
