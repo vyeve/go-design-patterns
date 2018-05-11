@@ -11,3 +11,4 @@ Design patterns for Go language
 ### Structural Patterns
 1. Composite
 2. Adapter
+3. Bridge
