@@ -12,3 +12,4 @@ Design patterns for Go language
 1. Composite
 2. Adapter
 3. Bridge
+4. Proxy
