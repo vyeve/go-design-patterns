@@ -13,3 +13,4 @@ Design patterns for Go language
 2. Adapter
 3. Bridge
 4. Proxy
+5. Decorator
