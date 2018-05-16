@@ -14,3 +14,4 @@ Design patterns for Go language
 3. Bridge
 4. Proxy
 5. Decorator
+6. Facade
