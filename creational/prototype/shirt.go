@@ -42,7 +42,7 @@ func (s *ShirtCache) GetClone(color ShirtColor) (ItemInfoGetter, error) {
 		newItem = *bluePrototype
 		return &newItem, nil
 	}
-	return nil, errors.New("shirt model not recognozed")
+	return nil, errors.New("shirt model not recognized")
 }
 
 type ItemInfoGetter interface {
