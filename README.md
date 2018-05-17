@@ -15,3 +15,4 @@ Design patterns for Go language
 4. Proxy
 5. Decorator
 6. Facade
+7. Flyweight
