@@ -16,3 +16,6 @@ Design patterns for Go language
 5. Decorator
 6. Facade
 7. Flyweight
+
+### Behavioral Patterns
+1. Strategy
