@@ -19,3 +19,4 @@ Design patterns for Go language
 
 ### Behavioral Patterns
 1. Strategy
+2. Chain of responsibility
