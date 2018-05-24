@@ -21,3 +21,4 @@ Design patterns for Go language
 1. Strategy
 2. Chain of responsibility
 3. Command
+4. Template
