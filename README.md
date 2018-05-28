@@ -23,3 +23,4 @@ Design patterns for Go language
 3. Command
 4. Template
 5. Memento
+6. Interpreter
