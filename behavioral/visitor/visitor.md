@@ -1,0 +1,3 @@
+In the Visitor design pattern, we are trying to separate the logic needed to work with specific object outside of the object itself. So we could have many different visitors that do some things to specific types.
+
+For example, we have a log writer that writes to console. We could make the logger "visitable" so that you can prepend any text to each log. We could write a Visitor pattern that prepends the date, the time, and the hostname to a field stored in the object.

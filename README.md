@@ -24,3 +24,4 @@ Design patterns for Go language
 4. Template
 5. Memento
 6. Interpreter
+7. Visitor
