@@ -25,3 +25,4 @@ Design patterns for Go language
 5. Memento
 6. Interpreter
 7. Visitor
+8. State
