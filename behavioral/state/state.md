@@ -1,0 +1,3 @@
+State pattern are directly related to FSMs (Finite State Machines). An FSM, in very simple terms, is that has one or more sttes and travels between them to execute some behaviors.
+
+A light switch is a common example of an FSM. It has two states - on and off. One state can transit to the other and vice versa. The way that the State pattern works is similar. We have a State interface and an implementation of each state we want to achive. There is also usually a context that holds cross-information between the states.
