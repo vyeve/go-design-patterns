@@ -1,0 +1,3 @@
+Mediator pattern will act as the type in charge of exchanging communication between two objects. This way, the communication objects don't need to know each other and can change more freely. The pattern that maintains which objects give what information is the Mediator.
+
+Just remember that the Mediator pattern is there to act as a managing type between two types that don't know about each other so that you can take one of the types without affecting the other and replace a type in a more easy and convenient way.
