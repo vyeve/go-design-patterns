@@ -27,3 +27,4 @@ Design patterns for Go language
 7. Visitor
 8. State
 9. Mediator
+10. Observer
