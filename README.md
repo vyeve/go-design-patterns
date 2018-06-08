@@ -28,3 +28,5 @@ Design patterns for Go language
 8. State
 9. Mediator
 10. Observer
+
+### Concurrency Patterns
