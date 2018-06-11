@@ -31,3 +31,4 @@ Design patterns for Go language
 
 ### Concurrency Patterns
 1. Barrier
+2. Future
