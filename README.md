@@ -30,3 +30,4 @@ Design patterns for Go language
 10. Observer
 
 ### Concurrency Patterns
+1. Barrier
