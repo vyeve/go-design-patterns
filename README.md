@@ -34,3 +34,4 @@ Design patterns for Go language
 2. Future
 3. Pipeline
 4. Workers pool
+5. Concurrent Publish/Subscriber
