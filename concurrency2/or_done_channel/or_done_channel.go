@@ -5,17 +5,19 @@ func orDone(done <-chan interface{}, c <-chan struct{}) <-chan struct{} {
 
 	go func() {
 		defer close(valStream)
-		select {
-		case <-done:
-			return
-		case v, ok := <-c:
-			if !ok {
-				return
-			}
+		for {
 			select {
-			case valStream <- v:
 			case <-done:
 				return
+			case v, ok := <-c:
+				if !ok {
+					return
+				}
+				select {
+				case valStream <- v:
+				case <-done:
+					return
+				}
 			}
 		}
 	}()
