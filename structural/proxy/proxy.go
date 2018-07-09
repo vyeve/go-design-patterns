@@ -1,5 +1,5 @@
 /*
-The Proxy pattern usually wraps an object to hide some of its characteristics.These characteistics
+The Proxy pattern usually wraps an object to hide some of its characteristics.These characteristics
 could be the fact that it is a remote object (remote proxy), a very heavy object such as a very big
 image or the dump of e terabyte database (virtual proxy), or a restricted access object (protection
 proxy).
