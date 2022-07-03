@@ -1,9 +1,13 @@
-package builder
+package builder_test
 
-import "testing"
+import (
+	"testing"
+
+	. "github.com/vyeve/go-design-patterns/creational/builder"
+)
 
 func TestBuilderPattern(t *testing.T) {
-	manufacturingComplex := ManufacturingDirector{}
+	manufacturingComplex := NewDirector()
 
 	carBuilder := &CarBuilder{}
 	manufacturingComplex.SetBuilder(carBuilder)

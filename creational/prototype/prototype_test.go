@@ -8,7 +8,7 @@ func TestClone(t *testing.T) {
 		t.Fatal("received cache was nil")
 	}
 
-	item1, err := shirtCache.GetClone(White)
+	item1, err := shirtCache.GetClone(White, "abc")
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -19,15 +19,15 @@ func TestClone(t *testing.T) {
 	if !ok {
 		t.Fatal("type assertion for shirt1 couldn't be done successfully")
 	}
-	shirt1.SKU = "abbcc"
+	shirt1.SKU = "abc"
 
-	item2, err := shirtCache.GetClone(White)
+	item2, err := shirtCache.GetClone(White, "123")
 	if err != nil {
 		t.Fatal(err)
 	}
 	shirt2, ok := item2.(*Shirt)
 	if !ok {
-		t.Fatal("type assertion for shirt2 couldn't be done succesfully")
+		t.Fatal("type assertion for shirt2 couldn't be done successfully")
 	}
 
 	if shirt1.SKU == shirt2.SKU {
@@ -37,5 +37,5 @@ func TestClone(t *testing.T) {
 	t.Logf("LOG: %s", shirt1.GetInfo())
 	t.Logf("LOG: %s", shirt2.GetInfo())
 
-	t.Logf("LOG: The mamory positions of the shirts are different %p != %p \n\n", &shirt1, &shirt2)
+	t.Logf("LOG: The memory positions of the shirts are different %p != %p \n\n", &shirt1, &shirt2)
 }

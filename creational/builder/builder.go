@@ -5,6 +5,11 @@ or writing the logic they require.
 
 package builder
 
+type Director interface {
+	SetBuilder(b BuildProcess)
+	Construct()
+}
+
 type BuildProcess interface {
 	SetWheels() BuildProcess
 	SetSeats() BuildProcess
@@ -18,14 +23,18 @@ type VehicleProduct struct {
 	Structure string
 }
 
-type ManufacturingDirector struct {
+type manufacturingDirector struct {
 	builder BuildProcess
 }
 
-func (m *ManufacturingDirector) Construct() {
+func (m *manufacturingDirector) Construct() {
 	m.builder.SetSeats().SetStructure().SetWheels()
 }
 
-func (m *ManufacturingDirector) SetBuilder(b BuildProcess) {
+func (m *manufacturingDirector) SetBuilder(b BuildProcess) {
 	m.builder = b
+}
+
+func NewDirector() Director {
+	return &manufacturingDirector{}
 }

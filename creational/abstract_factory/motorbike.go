@@ -3,12 +3,18 @@ package abstract_factory
 import "fmt"
 
 type Motorbike interface {
+	Vehicle
 	GetMotorbikeType() int
 }
 
 const (
 	SportMotorbikeType = iota
 	CruiseMotorbikeType
+)
+
+var (
+	_ Motorbike = (*SportMotorbike)(nil)
+	_ Motorbike = (*CruiseMotorbike)(nil)
 )
 
 type MotorbikeFactory struct{}

@@ -23,7 +23,8 @@ func TestGetInstance(t *testing.T) {
 		t.Error("Expected same instance in counter2 but it got a different instance")
 	}
 
-	currentCount = counter2.AddOne()
+	counter2.AddOne()
+	currentCount = counter2.GetCount()
 	expectedCount++
 	if currentCount != expectedCount {
 		t.Errorf("After calling 'AddOne' using the second counter, the current count must be %d but was %d\n",

@@ -11,7 +11,7 @@ import (
 	"fmt"
 )
 
-//PaymentMethod interface represents method Pay
+// PaymentMethod interface represents method Pay
 type PaymentMethod interface {
 	Pay(amount float32) string
 }
@@ -22,7 +22,7 @@ const (
 	DebitCard
 )
 
-// GetPaymentMethod return an object thay satisfies PaymentMethod interface
+// GetPaymentMethod return an object that satisfies PaymentMethod interface
 func GetPaymentMethod(m int) (PaymentMethod, error) {
 	switch m {
 	case Cash:

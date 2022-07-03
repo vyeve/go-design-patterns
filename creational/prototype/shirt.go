@@ -12,7 +12,7 @@ import (
 )
 
 type ShirtCloner interface {
-	GetClone(colorType ShirtColor) (ItemInfoGetter, error)
+	GetClone(colorType ShirtColor, sku string) (ItemInfoGetter, error)
 }
 
 type ShirtColor byte
@@ -29,24 +29,25 @@ func GetShirtsCloner() ShirtCloner {
 
 type ShirtCache struct{}
 
-func (s *ShirtCache) GetClone(color ShirtColor) (ItemInfoGetter, error) {
-	var newItem Shirt
+func (s *ShirtCache) GetClone(color ShirtColor, sku string) (ItemInfoGetter, error) {
+	var newItem = new(Shirt)
 	switch color {
 	case White:
-		newItem = *whitePrototype
-		return &newItem, nil
+		*newItem = *whitePrototype
 	case Black:
-		newItem = *blackPrototype
-		return &newItem, nil
+		*newItem = *blackPrototype
 	case Blue:
-		newItem = *bluePrototype
-		return &newItem, nil
+		*newItem = *bluePrototype
+	default:
+		return nil, errors.New("shirt model not recognized")
 	}
-	return nil, errors.New("shirt model not recognized")
+	newItem.SKU = sku
+	return newItem, nil
 }
 
 type ItemInfoGetter interface {
 	GetInfo() string
+	GetPrice() float32
 }
 
 type Shirt struct {
