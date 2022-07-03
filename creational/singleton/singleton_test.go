@@ -5,7 +5,7 @@ import "testing"
 func TestGetInstance(t *testing.T) {
 	counter1 := GetInstance()
 	if counter1 == nil {
-		//Test of acceptance criteria 1 failed
+		// Test of acceptance criteria 1 failed
 		t.Error("expected pointer to Singleton after calling GetInstance(), not nil")
 	}
 
@@ -19,7 +19,7 @@ func TestGetInstance(t *testing.T) {
 
 	counter2 := GetInstance()
 	if counter2 != expectedCounter {
-		//Test 2 failed
+		// Test 2 failed
 		t.Error("Expected same instance in counter2 but it got a different instance")
 	}
 
